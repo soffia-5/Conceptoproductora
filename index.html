@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concepto Productora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Logoconcepto.png" type="image/png">
+</head>
+<body>
+  <div class="top-container">
+    <header class="header">
+      <img class="logo" src="Logoconcepto.png" alt="Logo Concepto" />
+      <h2 class="title">C O N C E P T O</h2>
+      <button class="btn-login">LOG IN</button>
+    </header>
+
+    <main class="main">
+      <p class="subtitle">Productora Audiovisual</p>
+      <div class="sectors">
+        <button class="btn" onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button class="btn" onclick="mostrarSeccion('nosotros')">Nosotros</button>
+        <button class="btn" onclick="mostrarSeccion('servicios')">Servicios</button>
+        <button class="btn" onclick="mostrarSeccion('portafolio')">Portafolio</button>
+        <button class="btn" onclick="mostrarSeccion('contacto')">Contacto</button>
+      </div>
+    </main>
+  </div>
+
+  <section id="inicio" class="section active">
+    <h3>Bienvenido a Concepto</h3>
+    <p>Donde los conceptuales con concepto conceptual demuestran q los poryectos audiovisuales tienen concepto.
+      <br>
+</p>
+  </section>
+
+  <section id="nosotros" class="section">
+    <h3>Nosotros</h3>
+    <p>Conceptuales</p>
+    <br>
+    <button class="btn-login">Leer más</button>
+  </section>
+
+  <section id="servicios" class="section">
+    <h3>Servicios</h3>
+    <p>tooodo lo q vayamos a ofrecerle al cliente</p>
+  </section>
+
+  <section id="portafolio" class="section">
+    <h3>Portafolio</h3>
+    <p>Nuestros proyectos</p>
+  </section>
+
+  <section id="contacto" class="section">
+    <h3>Contacto</h3>
+    <p>conceptoproductora@gmail.com
+      <br>
+      <br>
+      ig: conceptofilms_</p>
+  </section>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.section');
+      secciones.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
