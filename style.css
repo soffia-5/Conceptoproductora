@@ -5,6 +5,7 @@ body {
   font-family: 'Libre Baskerville', serif;
   color: white;
   background-color: #385f69;
+  overflow-x: hidden; /* ⬅️ Evita que algo se desborde horizontalmente */
 }
 
 /* CONTENEDOR DE HEADER Y BOTONES */
@@ -12,84 +13,47 @@ body {
   background-color: #2e4e56; /* ⬅️ Se extiende el color oscuro aquí */
 }
 
-@media (max-width: 600px) {
-  /* HEADER: apilamos logo, título y login */
+@media (max-width: 768px) {
   .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #2e4e56;
-    width: 100%; /* 🔧 asegúrate que cubra todo el ancho */
-    padding: 20px 5vw;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
   }
 
   .logo {
-    width: 100px;
-    margin: 0 auto 10px;
-    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 10px 0;
-    text-align: center;
   }
 
   .btn-login {
+    justify-self: center;
     margin-top: 10px;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
   }
 
-  /* BOTONES DE NAVEGACIÓN EN COLUMNA */
   .sectors {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    gap: 1rem;
   }
 
-  .btn {
-    font-size: 1rem;
-  }
-
-  /* AJUSTE DEL COLOR DE FONDO DEL CONTENEDOR TOP */
-  .top-container {
-    background-color: #2e4e56;
-    width: 100%; /* 🔧 que no se corte a la derecha */
-  }
-
-  /* AJUSTES GENERALES */
-  .main {
-    padding: 0 5vw;
-  }
-
-  .subtitle {
-    margin-top: -30px;
-    font-size: 1rem;
-  }
-
-  .section {
-    padding: 30px 5vw;
-    text-align: center;
-  }
-
-  /* PORTAFOLIO AJUSTE */
   .fila-bj, .fila-qs {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
   }
 
-  .info-bj, .info-qs {
-    text-align: center;
-    align-items: center;
+  .imagen-qs {
+    order: 0;
   }
 
-  .descripcion p {
-    text-align: center;
+  .info-qs {
+    order: 1;
   }
 }
-
 
 /* ======= HEADER ======= */
 .header {
