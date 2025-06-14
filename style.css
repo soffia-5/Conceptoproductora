@@ -156,18 +156,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.info-bj {
-  flex: 1;
-  max-width: 500px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.info-qs {
-  order: 1;
+.info-bj, .info-qs {
   flex: 1;
   max-width: 500px;
   color: white;
@@ -178,11 +167,10 @@ body {
 }
 
 .titulito {
-  font-family: 'Libre Baskerville', serif;
   font-size: 1.8rem;
-  margin: 0 auto 16px;
   text-align: center;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .descripcion p {
@@ -191,6 +179,7 @@ body {
   color: #dddddd;
 }
 
+/* ======= REDES SOCIALES ======= */
 .link-social {
   display: inline-flex;
   align-items: center;
@@ -205,22 +194,50 @@ body {
   text-decoration: underline;
 }
 
-.icono-social {
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;
-  object-fit: contain;
-}
-
-.icono-youtube {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-
-.icono-tiktok {
+.icono-social, .icono-tiktok, .icono-youtube {
   width: 30px;
   height: 30px;
   object-fit: contain;
   border-radius: 5px;
+}
+
+/* ======= RESPONSIVE (SOLO MÓVIL) ======= */
+@media screen and (max-width: 768px) {
+  .header {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .title, .subtitle {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .subtitle {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 80px;
+    margin-top: 0;
+  }
+
+  .btn-login {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .main {
+    padding-top: 20px;
+  }
+
+  .sectors {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
