@@ -216,9 +216,11 @@ body {
 @media (max-width: 768px) {
   .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5vw;
+    flex-wrap: wrap;
   }
 
   .logo {
@@ -229,20 +231,23 @@ body {
   .btn-login {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+    order: 2;
   }
 
   .title {
-    order: 3;
     width: 100%;
     text-align: center;
     margin-top: 15px;
     font-size: 1.6rem;
+    order: 3;
   }
 
   .subtitle {
-    order: 4;
     font-size: 1rem;
     margin-top: 10px;
     margin-bottom: 40px;
+    order: 4;
+    width: 100%;
+    text-align: center;
   }
 }
