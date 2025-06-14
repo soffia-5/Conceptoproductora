@@ -224,39 +224,37 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5vw;
+    padding: 10px 5vw;
     flex-wrap: wrap;
   }
 
   .title {
     width: 100%;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin: 0;
     font-size: 1.6rem;
-    order: 1; /* Va primero */
+    order: 1;
   }
 
   .subtitle {
     width: 100%;
     text-align: center;
     font-size: 1rem;
-    margin-top: 0;
-    margin-bottom: 10px;
-    order: 2; /* Va justo debajo del título */
+    margin: 5px 0 15px 0;
+    order: 2;
   }
 
   .logo {
     width: 100px;
-    margin-top: 0;
-    order: 3; /* Logo después del subtítulo */
+    margin: 0;
+    order: 3;
   }
 
   .btn-login {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-    margin-top: 5px;
-    order: 4; /* Login último */
+    margin: 0;
+    order: 4;
   }
 
   .sectors {
