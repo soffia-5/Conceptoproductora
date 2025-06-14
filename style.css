@@ -5,7 +5,6 @@ body {
   font-family: 'Libre Baskerville', serif;
   color: white;
   background-color: #385f69;
-  overflow-x: hidden;
 }
 
 /* CONTENEDOR DE HEADER Y BOTONES */
@@ -13,19 +12,20 @@ body {
   background-color: #2e4e56;
 }
 
-/* ======= HEADER (Logo y login) ======= */
+/* ======= HEADER ======= */
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  align-items: flex-start;
+  padding: 10px 5vw;
+  position: relative;
 }
 
 /* LOGO */
 .logo {
-  width: 150px;
+  width: 130px;
   height: auto;
-  object-fit: contain;
+  margin-top: 30px;
 }
 
 /* LOGIN */
@@ -33,12 +33,13 @@ body {
   background-color: #ffffff;
   color: #385f69;
   border: none;
-  padding: 10px 20px;
+  padding: 0.8rem 1.5rem;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 .btn-login:hover {
@@ -46,21 +47,25 @@ body {
   color: #f0f0f0;
 }
 
-/* ======= MAIN (Título y subtítulo centrados) ======= */
+/* ======= MAIN ======= */
 .main {
   text-align: center;
-  padding: 10px 0 20px;
+  padding-top: 2vh;
 }
 
+/* TÍTULO */
 .title {
-  font-size: 2.5rem;
-  margin: 10px 0 0;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
 }
 
+/* SUBTÍTULO */
 .subtitle {
   font-size: 1.2rem;
-  margin-top: 5px;
-  margin-bottom: 80px;
+  margin-top: -10px;
+  margin-bottom: 60px;
 }
 
 /* ======= BOTONES ======= */
@@ -91,7 +96,7 @@ body {
 /* ======= SECCIONES ======= */
 .section {
   display: none;
-  padding: 0 8vw;
+  padding: -5vh 8vw;
   background-color: #385f69;
   color: white;
   text-align: center;
@@ -124,7 +129,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Imagen BLACKJACK (izquierda) */
 .imagen-bj {
   width: 100%;
   max-width: 500px;
@@ -135,7 +139,6 @@ body {
   cursor: pointer;
 }
 
-/* Imagen QS (derecha) */
 .imagen-qs {
   order: 2;
   flex: 1;
@@ -151,8 +154,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Info BLACKJACK */
-.info-bj {
+.info-bj, .info-qs {
   flex: 1;
   max-width: 500px;
   color: white;
@@ -162,16 +164,8 @@ body {
   text-align: left;
 }
 
-/* Info QS (a la izquierda) */
 .info-qs {
   order: 1;
-  flex: 1;
-  max-width: 500px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
 }
 
 .titulito {
@@ -210,12 +204,7 @@ body {
   object-fit: contain;
 }
 
-.icono-youtube {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-
+.icono-youtube,
 .icono-tiktok {
   width: 30px;
   height: 30px;
@@ -223,44 +212,30 @@ body {
   border-radius: 5px;
 }
 
-/* ======= RESPONSIVE ======= */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-
+/* ======= MEDIA QUERIES ======= */
+@media screen and (max-width: 768px) {
   .logo {
     width: 100px;
   }
 
   .btn-login {
+    padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
-    padding: 8px 16px;
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 10px;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin-top: -5px;
   }
 
-  .fila-bj,
-  .fila-qs {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .info-bj,
-  .info-qs {
-    text-align: center;
-  }
-
-  body {
-    overflow-x: hidden;
+  .sectors {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 }
