@@ -205,40 +205,42 @@ body {
 @media screen and (max-width: 768px) {
   .header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
     padding: 20px;
   }
 
   .title {
-    width: 100%;
-    text-align: center;
     font-size: 1.5rem;
     margin: 0;
-    order: -2;
+    text-align: center;
+    order: -2; /* Título arriba */
   }
 
   .subtitle {
-    width: 100%;
-    text-align: center;
     font-size: 1rem;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    order: -1;
+    margin: 5px 0 20px;
+    text-align: center;
+    order: -1; /* Subtítulo justo debajo del título */
+  }
+
+  .logo-login-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    order: 0; /* Luego va la fila del logo + botón */
   }
 
   .logo {
     width: 80px;
     margin-top: 0;
-    order: 0;
   }
 
   .btn-login {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-    order: 1;
   }
 
   .main {
