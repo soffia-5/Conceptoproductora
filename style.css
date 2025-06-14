@@ -243,14 +243,14 @@ body {
   .title {
     width: 100%;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 25px;
     font-size: 1.6rem;
     order: 3;
   }
 
   .subtitle {
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: -10px;
     margin-bottom: 40px;
     order: 4;
     width: 100%;
