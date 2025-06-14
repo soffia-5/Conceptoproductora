@@ -20,23 +20,36 @@ body {
   position: relative;
 }
 
+/* Logo a la izquierda */
 .logo {
-  width: 150px;
-  height: auto;
-  object-fit: contain;
-  margin-top: 45px;
+  grid-column: 1;
+  justify-self: start;
   margin-left: 20px;
-  align-self: flex-start;
+  margin-top: 45px;
+  width: 150px;
 }
 
+/* Título al centro */
 .title {
+  grid-column: 2;
   justify-self: center;
   font-size: 2rem;
   margin: 0;
   text-align: center;
 }
 
+/* Subtítulo también centrado, debajo del título */
+.subtitle {
+  grid-column: 2;
+  justify-self: center;
+  font-size: 1.2rem;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+/* Botón login a la derecha */
 .btn-login {
+  grid-column: 3;
   justify-self: end;
   background-color: #ffffff;
   color: #385f69;
@@ -44,9 +57,9 @@ body {
   padding: 0.8rem 1.5rem;
   border-radius: 30px;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  font-weight: bold;
 }
 
 .btn-login:hover {
