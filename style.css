@@ -13,76 +13,83 @@ body {
 }
 
 @media (max-width: 600px) {
+  /* HEADER: apilamos logo, título y login */
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #2e4e56;
+    width: 100%; /* 🔧 asegúrate que cubra todo el ancho */
     padding: 20px 5vw;
-    text-align: center;
   }
 
   .logo {
-    width: 80px;
-    height: auto;
-    margin: 0 auto;
+    width: 100px;
+    margin: 0 auto 10px;
+    display: block;
   }
 
   .title {
-    font-size: 1.4rem;
-    white-space: nowrap;
+    font-size: 1.6rem;
     margin: 10px 0;
+    text-align: center;
   }
 
   .btn-login {
-    font-size: 0.9rem;
-    padding: 0.5rem 1.2rem;
     margin-top: 10px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* BOTONES DE NAVEGACIÓN EN COLUMNA */
+  .sectors {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  /* AJUSTE DEL COLOR DE FONDO DEL CONTENEDOR TOP */
+  .top-container {
+    background-color: #2e4e56;
+    width: 100%; /* 🔧 que no se corte a la derecha */
+  }
+
+  /* AJUSTES GENERALES */
+  .main {
+    padding: 0 5vw;
   }
 
   .subtitle {
     margin-top: -30px;
-    margin-bottom: 60px;
     font-size: 1rem;
   }
 
-  .sectors {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-
   .section {
-    padding: 20px 5vw;
+    padding: 30px 5vw;
     text-align: center;
   }
 
+  /* PORTAFOLIO AJUSTE */
   .fila-bj, .fila-qs {
     flex-direction: column;
     gap: 30px;
-    align-items: center;
   }
 
   .info-bj, .info-qs {
-    align-items: center;
     text-align: center;
+    align-items: center;
   }
 
   .descripcion p {
     text-align: center;
   }
-
-  .link-social {
-    justify-content: center;
-  }
-
-  .icono-social,
-  .icono-youtube,
-  .icono-tiktok {
-    width: 24px;
-    height: 24px;
-  }
 }
+
 
 /* ======= HEADER ======= */
 .header {
