@@ -230,27 +230,27 @@ body {
 
   .logo {
     width: 100px;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   .btn-login {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-    margin-top: 50px;
+    margin-top: 150px;
     order: 2;
   }
   
   .title {
     width: 100%;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -140px;
     font-size: 1.6rem;
     order: 3;
   }
 
   .subtitle {
     font-size: 1rem;
-    margin-top: -30px;
+    margin-top: -130px;
     margin-bottom: 40px;
     order: 4;
     width: 100%;
