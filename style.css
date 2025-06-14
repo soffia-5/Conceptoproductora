@@ -234,31 +234,3 @@
 
 /* ======= RESPONSIVE (SOLO MÓVIL) ======= */
 /* ===== RESPONSIVE PARA CELULARES ===== */
-@media (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title {
-    order: 1;
-  }
-
-  .subtitle {
-    order: 2;
-  }
-
-  .logo-login-row {
-    order: 3;
-    display: flex;
-    gap: 10px;
-  }
-
-  .sectors {
-    order: 4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
