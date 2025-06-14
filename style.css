@@ -232,41 +232,41 @@ body {
 
 /* ======= SOLO PARA CELULAR ======= */
 @media (max-width: 768px) {
-  /* Header con logo y login */
   .header {
-    display: flex;
+    grid-template-columns: auto auto;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+    padding: 10px 5vw 0;
   }
 
   .logo {
-    width: 90px;
-    margin-top: 0;
+    width: 100px;
+    margin-top: 20px;
     margin-left: 0;
   }
 
   .btn-login {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+    align-self: flex-start;
+    margin-top: 20px;
   }
 
-  /* Título centrado debajo */
   .title {
+    grid-column: 1 / -1;
+    font-size: 1.5rem;
     text-align: center;
-    font-size: 1.6rem;
     margin-top: 20px;
   }
 
   .subtitle {
-    text-align: center;
     font-size: 1rem;
-    margin-top: 5px;
-    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
   }
 
-  .top-container {
-    background-color: #2e4e56;
-    width: 100%;
+  .sectors {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 }
