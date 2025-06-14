@@ -223,17 +223,7 @@ body {
     margin-top: 0;
     margin-bottom: -80px;
   }
-
-  .main {
-    padding-top: 10px;
-  }
-
-  .sectors {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
+  
   .logo {
     margin-top: 0;
     width: 80px;
@@ -242,5 +232,15 @@ body {
   .btn-login {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+  }
+  
+  .main {
+    padding-top: 10px;
+  }
+
+  .sectors {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
