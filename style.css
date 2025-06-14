@@ -18,6 +18,7 @@ body {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 10px 5vw;
+  position: relative;
 }
 
 /* LOGO */
@@ -27,7 +28,7 @@ body {
   object-fit: contain;
   margin-top: 45px;
   margin-left: 20px;
-  justify-self: start;
+  align-self: flex-start;
 }
 
 /* TÍTULO */
