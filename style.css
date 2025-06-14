@@ -214,7 +214,7 @@ body {
   .title {
     grid-column: 1 / -1;
     font-size: 1.8rem;
-    margin-top: -50px;
+    margin-top: 50px;
   }
 
   .subtitle {
