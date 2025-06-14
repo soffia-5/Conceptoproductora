@@ -228,33 +228,35 @@ body {
     flex-wrap: wrap;
   }
 
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    order: 1; /* Va primero */
+  }
+
+  .subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    order: 2; /* Va justo debajo del título */
+  }
+
   .logo {
     width: 100px;
-    margin-top: 150px;
+    margin-top: 0;
+    order: 3; /* Logo después del subtítulo */
   }
 
   .btn-login {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-    margin-top: 150px;
-    order: 2;
-  }
-  
-  .title {
-    width: 100%;
-    text-align: center;
-    margin-top: -140px;
-    font-size: 1.6rem;
-    order: 3;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    margin-top: -130px;
-    margin-bottom: 40px;
-    order: 4;
-    width: 100%;
-    text-align: center;
+    margin-top: 5px;
+    order: 4; /* Login último */
   }
 
   .sectors {
