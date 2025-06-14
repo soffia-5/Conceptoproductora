@@ -13,34 +13,74 @@ body {
 }
 
 @media (max-width: 600px) {
-  /* Cambiamos el grid a flex para que se apile verticalmente */
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
     padding: 20px 5vw;
+    text-align: center;
   }
 
   .logo {
     width: 80px;
-    margin-top: 0;
-    margin-left: 0;
+    height: auto;
+    margin: 0 auto;
   }
 
   .title {
     font-size: 1.4rem;
-    white-space: nowrap; /* evita que se parta en dos líneas */
-    text-align: center;
+    white-space: nowrap;
+    margin: 10px 0;
   }
 
   .btn-login {
     font-size: 0.9rem;
     padding: 0.5rem 1.2rem;
+    margin-top: 10px;
   }
 
   .subtitle {
-    margin-top: -40px; /* para compensar el nuevo alto del header */
+    margin-top: -30px;
+    margin-bottom: 60px;
+    font-size: 1rem;
+  }
+
+  .sectors {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .section {
+    padding: 20px 5vw;
+    text-align: center;
+  }
+
+  .fila-bj, .fila-qs {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .info-bj, .info-qs {
+    align-items: center;
+    text-align: center;
+  }
+
+  .descripcion p {
+    text-align: center;
+  }
+
+  .link-social {
+    justify-content: center;
+  }
+
+  .icono-social,
+  .icono-youtube,
+  .icono-tiktok {
+    width: 24px;
+    height: 24px;
   }
 }
 
