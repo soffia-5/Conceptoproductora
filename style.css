@@ -206,36 +206,44 @@ body {
 /* === MOBILE RESPONSIVE === */
 @media screen and (max-width: 768px) {
   .header {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    flex-wrap: wrap;
   }
 
   .title {
-    grid-column: 1 / -1;
+    order: -2;
+    width: 100%;
+    text-align: center;
     font-size: 1.8rem;
-    margin-top: -150px;
+    margin: 10px 0 0 0;
   }
 
   .subtitle {
-    grid-column: 1 / -1;
+    order: -1;
+    width: 100%;
+    text-align: center;
     font-size: 1rem;
-    margin-top: -150;
-    margin-bottom: -80px;
+    margin: 5px 0 10px 0;
   }
-  
+
   .logo {
-    margin-top: 200;
+    order: 0;
     width: 80px;
+    margin: 0;
   }
 
   .btn-login {
+    order: 0;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
-  
+
   .main {
-    padding-top: 100px;
+    padding-top: 20px;
   }
 
   .sectors {
