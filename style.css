@@ -195,3 +195,38 @@ body {
   font-size: 16px;
   color: #dddddd;
 }
+
+/* PAL IG */
+.link-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.link-social:hover {
+  text-decoration: underline;
+}
+
+.icono-social {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.icono-youtube {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.icono-tiktok {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 5px;
+}
