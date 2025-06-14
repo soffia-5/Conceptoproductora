@@ -10,14 +10,13 @@
 </head>
 <body>
   <div class="top-container">
-    <h2 class="title">C O N C E P T O</h2>
-    <p class="subtitle">Productora Audiovisual</p>
     <header class="header">
-      <img class="logo" src="Logoconcepto.png" alt="Logo Concepto" />
-      <button class="btn-login">LOG IN</button>
-    </header>
-
-    <main class="main">
+      <h2 class="title">C O N C E P T O</h2>
+      <p class="subtitle">Productora Audiovisual</p>
+      <div class="logo-login-row">
+        <img class="logo" src="Logoconcepto.png" alt="Logo Concepto" />
+        <button class="btn-login">LOG IN</button>
+      </div>
       <div class="sectors">
         <button class="btn" onclick="mostrarSeccion('inicio')">Inicio</button>
         <button class="btn" onclick="mostrarSeccion('nosotros')">Nosotros</button>
@@ -25,10 +24,10 @@
         <button class="btn" onclick="mostrarSeccion('portafolio')">Portafolio</button>
         <button class="btn" onclick="mostrarSeccion('contacto')">Contacto</button>
       </div>
-    </main>
+    </header>
   </div>
 
-  <section id="inicio" class="section active">
+<section id="inicio" class="section active">
     <h3>Bienvenido a Concepto</h3>
     <p>Donde los conceptuales con concepto conceptual demuestran q los poryectos audiovisuales tienen concepto.
       <br>
@@ -112,7 +111,6 @@
     </a>
   </div>
 </section>
-
 
   <script>
     function mostrarSeccion(id) {
