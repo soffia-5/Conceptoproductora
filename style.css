@@ -1,4 +1,4 @@
-/* ======= GENERAL ======= */
+  /* ======= GENERAL ======= */
 body {
   margin: 0;
   padding: 0;
@@ -120,4 +120,78 @@ body {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+
+/* ======= PORTAFOLIO ======= */
+.fila-bj, .fila-qs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 130px;
+  flex-wrap: wrap;
+}
+
+/* Imagen BLACKJACK (izquierda) */
+.imagen-bj {
+  width: 100%;
+  max-width: 500px;
+  flex: 1;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* Imagen QS (derecha) */
+.imagen-qs {
+  order: 2;
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.imagen-qs img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Info BLACKJACK */
+.info-bj {
+  flex: 1;
+  max-width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Info QS (a la izquierda) */
+.info-qs {
+  order: 1;
+  flex: 1;
+  max-width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.titulito {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.8rem;
+  margin: 0 auto 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.descripcion p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #dddddd;
 }
