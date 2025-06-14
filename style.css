@@ -201,7 +201,7 @@ body {
   border-radius: 5px;
 }
 
-/* ======= RESPONSIVE (SOLO MÓVIL) ======= */
+/* ======= RESPONSIVE MÓVIL ======= */
 @media screen and (max-width: 768px) {
   .header {
     display: flex;
@@ -214,12 +214,14 @@ body {
     font-size: 1.5rem;
     margin: 10px 0 5px;
     text-align: center;
+    order: 1;
   }
 
   .subtitle {
     font-size: 1rem;
     margin: 0 0 20px;
     text-align: center;
+    order: 2;
   }
 
   .logo-login-row {
@@ -228,6 +230,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    order: 3;
   }
 
   .logo {
