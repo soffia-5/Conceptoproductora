@@ -196,7 +196,7 @@
     color: #dddddd;
   }
 
-  /* PAL IG */
+  /* CONTACTO*/
   .link-social {
     display: inline-flex;
     align-items: center;
@@ -231,53 +231,21 @@
     border-radius: 5px;
   }
 
-
-/* ======= RESPONSIVE (SOLO MÓVIL) ======= */
-/* ===== RESPONSIVE PARA CELULARES ===== */
-/* ======= AJUSTES PARA CELULARES ======= */
-@media (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 0;
+    .icono-facebook {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 5px;
   }
 
-  .title {
-    order: -2;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-  }
-
-  .subtitle {
-    order: -1;
-    margin: 0 0 30px 0;
-    font-size: 1rem;
-  }
-
-  .logo {
-    width: 120px;
-    margin: 0;
-  }
-
-  .btn-login {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-    align-self: center;
-  }
-
-  .main {
-    padding: 0;
-  }
-
-  .sectors {
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 30px;
-  }
-
-  .btn {
-    font-size: 1rem;
-  }
+ /* INICIO*/
+ .in-1 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }
+
+.in-1 p {
+  flex: 1;
+}
+  
